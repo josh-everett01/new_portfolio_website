@@ -21,8 +21,8 @@ body, html {
 
 /* Images used */
 
-.img2 { background-image: url("/img/3b94ae.png"); }
-.img3 { background-image: url("/img/clouds_two.jpg"); }
+.img2 { background-image: url("img/3b94ae.png"); }
+.img3 { background-image: url("img/clouds_two.jpg"); }
 
 
 /* Position text in the middle of the page/image */
