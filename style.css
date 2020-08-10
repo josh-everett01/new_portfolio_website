@@ -368,6 +368,45 @@ transition: 0.3s;
   
   
 }
+@media screen and (max-width: 540px) {
+  html {
+    height: 100%;
+  }
+  
+  .typewriter h1 {
+    font-size: 30px;
+  }
+  .typewriter p {
+    
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+  .cards-container {
+    display: flex;
+  }
+  .biggerp {
+    display: inline;
+  }
+  .smallerp {
+    display: none;
+  }
+
+  .card1 {
+    margin-top: -50px;
+    margin-left: 40px;
+    
+   
+  }
+  .card2 {
+    margin-left: 20px;
+  }
+  .card3 {
+    margin-left: 210px;
+  }
+  
+  
+}
 
 
 @media screen and (max-width: 600px) {
@@ -376,9 +415,10 @@ transition: 0.3s;
   }
   .typewriter h1 {
     padding-top: 100px;
-    font-size: 24px;
+    font-size: 22px;
   }
   .typewriter p {
+   
     margin-top: 50px;
     font-size: 18px;
     font-weight: bold;
@@ -416,20 +456,95 @@ transition: 0.3s;
 
   .card1 {
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 9px;
     
    
   }
   .card2 {
-    margin-left: 200px;
+    margin-left: 185px;
   }
   .card3 {
-    margin-left: 200px;
+    margin-left: 185px;
   }
   
   
 }
 @media screen and (max-width: 480px) {
+  html {
+    height: 100%;
+  }
+  .typewriter h1 {
+    padding-top: 50px;
+    font-size: 16px;
+  }
+  .typewriter p {
+    margin-top: 25%;
+    font-size: 16px;
+    
+  
+  }
+  .biggerp {
+    display: none;
+  }
+  .smallerp {
+    display: inline;
+  }
+  .cards-container {
+    display: flex;
+    
+  }
+  
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img3 {
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .card {
+    padding-top: 15px;
+    margin-top: -3em;
+    margin-left: 28%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .card1 {
+    font-size: 14px;
+    
+    margin-left: 12px;
+    
+   
+  }
+  .card2 {
+    font-size: 14px;
+    margin-top: -110px;
+    margin-left: 125px;
+  }
+  .card3 {
+    font-size: 14px;
+    margin-top: -110px;
+    margin-left: 125px;
+    
+  }
+  
+  
+}
+@media screen and (max-width: 320px) {
   html {
     height: 100%;
   }
@@ -487,7 +602,7 @@ transition: 0.3s;
   .card1 {
     font-size: 14px;
     margin-top: -60px;
-    margin-left: 25px;
+    margin-left: 10px;
     
    
   }
@@ -499,9 +614,86 @@ transition: 0.3s;
   .card3 {
     font-size: 14px;
     margin-top: -110px;
-    margin-left: 150px;
+    margin-left: 80px;
   }
   
   
 }
 
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+      html {
+        height: 100%;
+      }
+      .typewriter h1 {
+        padding-top: 100px;
+        font-size: 18px;
+      }
+      .typewriter p {
+        margin-top: 50px;
+        font-size: 16px;
+        
+      
+      }
+      .biggerp {
+        display: none;
+      }
+      .smallerp {
+        display: inline;
+      }
+      .cards-container {
+        display: flex;
+        
+      }
+      
+      
+      .bg-image {
+        /* Full height */
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
+        
+      
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    
+      .img3 {
+        max-height: 100%;
+        min-height: 100%;
+      }
+    
+      .card {
+        padding-top: 15px;
+        margin-top: 75px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10%;
+        text-align: center;
+        width: 100px;
+        height: 100px;
+        
+      }
+    
+      .card1 {
+        font-size: 14px;
+        margin-top: -60px;
+        margin-left: 10px;
+        
+       
+      }
+      .card2 {
+        font-size: 14px;
+        margin-top: -110px;
+        margin-left: 150px;
+      }
+      .card3 {
+        font-size: 14px;
+        margin-top: -110px;
+        margin-left: 80px;
+      }
+    }
