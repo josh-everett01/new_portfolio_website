@@ -243,12 +243,44 @@ body, html {
   
   /* Smartphones (landscape) ----------- */
   @media only screen and (min-width : 321px) {
-  /* Styles */
+  .typewriter h1 {
+      font-size: 3vh;
+    }
+    .biggerp {
+      display: none;
+    }
+    .smallerp {
+      display: inline;
+    }
+    .typewriter p {
+      margin-top: 25%;
+      font-size: 3vh;
+    }
   }
   
   /* Smartphones (portrait) ----------- */
   @media only screen and (max-width : 320px) {
-  /* Styles */
+    .typewriter h1 {
+      font-size: 2vh;
+    }
+    .typewriter p {
+    margin-top: 40%;
+     font-size: 2vh;
+    }
+    
+    .container {
+  
+    height: 75px;
+    width: 75px;
+    
+  }
+  .card {
+    margin-top: 30%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 10%;
+    font-size: small;
+  }
   }
   
   /* iPads (portrait and landscape) ----------- */
@@ -330,7 +362,25 @@ body, html {
   }
   /* Desktops and laptops ----------- */
   @media only screen  and (min-width : 1224px) {
-  /* Styles */
+    .typewriter h1 {
+      font-size: 8vh;
+    }
+    .typewriter p {
+    
+     font-size: 6vh;
+    }
+    
+    .container {
+  
+    height: 150px;
+    width: 150px;
+    
+  }
+  .card {
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: large;
+  }
   }
   
   /* Large screens ----------- */
@@ -585,7 +635,7 @@ body, html {
   
   @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     .typewriter h1 {
-      font-size: 2.3vh;
+      font-size: 16px;
     }
     .typewriter p {
     margin-top: 40%;
