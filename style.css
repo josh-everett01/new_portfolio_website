@@ -2,16 +2,27 @@ body, html {
   height:100%;
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  
+  overflow: hidden;
+    
+}
+.biggerp {
+  display: inline;
+}
+.smallerp {
+  display: none;
 }
 
 * {
   box-sizing: border-box;
 }
 
+.site-container {
+  height: 100%;
+}
+
 .bg-image {
   /* Full height */
-  height: 110%;
+  height: 100%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -19,9 +30,7 @@ body, html {
   background-size: cover;
 }
 
-/* Images used */
 
-.img2 { background-image: url("img/3b94ae.png"); }
 .img3 { background-image: url("img/clouds_two.jpg"); }
 
 
@@ -134,35 +143,365 @@ transition: 0.3s;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1200px) {
+
+  body, html {
+      height:110vh;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      overflow: hidden;
+        
+    }
+    body {
+      height: 100%;
+      
+  }
+  .biggerp {
+    display: inline;
+  }
+  .smallerp {
+    display: none;
+  }
+  
   .typewriter h1 {
-    font-size: 22px;
+    
+    font-size: 45px;
+    
+  }
+  
+  .typewriter p {
+    margin-bottom: 100px;
+    font-size: 30px;
+    font-weight: bold;
+  
+  }
+   .card-container {
+    
+    
+    display: flex;
+    justify-content: space-between;
+    margin-left: -300px;
+   }
+
+   .card1 {
+     margin-top: -50px;
+     margin-left: 150px;
+     
+    
+   }
+   .card2 {
+     margin-left: 300px;
+   }
+   .card3 {
+     margin-left: 300px;
+   }
+ 
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+  
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img3 {
+    max-height: 100%;
+    min-height: 100%;
+  }
+  
+
+}
+@media screen and (max-width: 1080px) {
+
+  body, html {
+      height:110vh;
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      overflow: hidden;
+        
+    }
+    body {
+      height: 100%;
+      
+  }
+  .biggerp {
+    display: inline;
+  }
+  .smallerp {
+    display: none;
+  }
+  
+  .typewriter h1 {
+    
+    font-size: 40px;
+    
+  }
+  
+  .typewriter p {
+    margin-bottom: 150px;
+    font-size: 30px;
+    font-weight: bold;
+  
+  }
+   .card-container {
+    
+    
+    display: flex;
+    justify-content: space-between;
+    margin-left: -300px;
+   }
+
+   .card1 {
+     margin-top: -80px;
+     margin-left: 120px;
+     
+    
+   }
+   .card2 {
+     margin-left: 300px;
+   }
+   .card3 {
+     margin-left: 300px;
+   }
+ 
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+  
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img3 {
+    max-height: 100%;
+    min-height: 100%;
+  }
+  
+
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    height: 100%;
+  }
+  
+  .typewriter h1 {
+    font-size: 30px;
   }
   .typewriter p {
     
-    font-size: 14px;
+    font-size: 20px;
+    font-weight: bold;
+  
+  }
+  .biggerp {
+    display: inline;
+  }
+  .smallerp {
+    display: none;
+  }
+  .cards-container {
+    display: flex;
+  }
+
+  .card1 {
+    margin-top: -50px;
+    margin-left: 75px;
+    
+   
+  }
+  .card2 {
+    margin-left: 260px;
+  }
+  .card3 {
+    margin-left: 260px;
+  }
+  
+  
+}
+@media screen and (max-width: 760px) {
+  html {
+    height: 100%;
+  }
+  
+  .typewriter h1 {
+    font-size: 30px;
+  }
+  .typewriter p {
+    
+    font-size: 20px;
     font-weight: bold;
   
   }
   .cards-container {
     display: flex;
   }
-  .card1 {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+  .biggerp {
+    display: inline;
   }
-  .card2 {
-    margin-top: 25%;
-    margin-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .card3 {
-    margin-top: 25%;
-    margin-left: auto;
-    margin-right: auto;
+  .smallerp {
+    display: none;
   }
 
+  .card1 {
+    margin-top: -50px;
+    margin-left: 40px;
+    
+   
+  }
+  .card2 {
+    margin-left: 260px;
+  }
+  .card3 {
+    margin-left: 260px;
+  }
+  
+  
+}
+
+
+@media screen and (max-width: 600px) {
+  html {
+    height: 100%;
+  }
+  .typewriter h1 {
+    padding-top: 100px;
+    font-size: 24px;
+  }
+  .typewriter p {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: bold;
+  
+  }
+  .biggerp {
+    display: none;
+  }
+  .smallerp {
+    display: inline;
+  }
+  .cards-container {
+    display: flex;
+    
+  }
+  
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img3 {
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .card1 {
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+   
+  }
+  .card2 {
+    margin-left: 200px;
+  }
+  .card3 {
+    margin-left: 200px;
+  }
+  
+  
+}
+@media screen and (max-width: 480px) {
+  html {
+    height: 100%;
+  }
+  .typewriter h1 {
+    padding-top: 100px;
+    font-size: 18px;
+  }
+  .typewriter p {
+    margin-top: 50px;
+    font-size: 16px;
+    
+  
+  }
+  .biggerp {
+    display: none;
+  }
+  .smallerp {
+    display: inline;
+  }
+  .cards-container {
+    display: flex;
+    
+  }
+  
+  
+  .bg-image {
+    /* Full height */
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .img3 {
+    max-height: 100%;
+    min-height: 100%;
+  }
+
+  .card {
+    padding-top: 15px;
+    margin-top: 75px;
+    margin-left: 28%;
+    margin-bottom: 10%;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    
+  }
+
+  .card1 {
+    font-size: 14px;
+    margin-top: -60px;
+    margin-left: 25px;
+    
+   
+  }
+  .card2 {
+    font-size: 14px;
+    margin-top: -110px;
+    margin-left: 150px;
+  }
+  .card3 {
+    font-size: 14px;
+    margin-top: -110px;
+    margin-left: 150px;
+  }
+  
+  
 }
 
