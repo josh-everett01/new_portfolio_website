@@ -203,483 +203,134 @@ body, html {
     padding-top: 25%;
   }
 
-  
+  /* Extra Small devices */
+  @media only screen and (max-width: 600px) {
+    html {
+      overflow: auto;
+    }
+    .biggerp {
+      display: none;
+    }
+    .smallerp {
+      display: inline;
+    }
 
+    .typewriter h1 {
+      margin-top: 5%;
+      font-size: 3vh;
+    }
 
+    .typewriter p {
+      margin-top: 20%;
+      font-size: 2.8vh;
+    }
+    .card {
+      margin-top: 8%;    }
+      
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* MEDIA QUERIES */
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
   .biggerp {
     display: none;
   }
   .smallerp {
     display: inline;
   }
+
   .typewriter h1 {
-    margin-top: 30%;
-    font-size: 2.3vh;
+    margin-top: 5%;
+    font-size: 3.8vh;
   }
+
   .typewriter p {
-   font-size: 2vh;
+    margin-top: 20%;
+    font-size: 3.5vh;
+  }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .biggerp {
+    display: none;
+  }
+  .smallerp {
+    display: inline;
   }
 
-  }
-  
-  /* Smartphones (landscape) ----------- */
-  @media only screen and (min-width : 321px) {
   .typewriter h1 {
-      font-size: 3vh;
-    }
-    .biggerp {
-      display: none;
-    }
-    .smallerp {
-      display: inline;
-    }
-    .typewriter p {
-      margin-top: 25%;
-      font-size: 3vh;
-    }
-  }
   
-  /* Smartphones (portrait) ----------- */
-  @media only screen and (max-width : 320px) {
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
+    font-size: 4.2vh;
   }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  /* iPads (portrait and landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    .biggerp {
-      display: none;
-    }
-    .smallerp {
-      display: inline;
-    }
-    .typewriter h1 {
-      margin-top: 15%;
-      font-size: 2.3vh;
-    }
-    .typewriter p {
-      margin-top: 50%;
-     font-size: 2vh;
-    }
-    .card {
-      margin-top: 20%;
-    }
-  }
-  
-  /* iPads (landscape) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-    .typewriter h1 {
-      margin-top: 8%;
-      font-size: 5vh;
-    }
-    .typewriter p {
-      margin-top: 8%;
-     font-size: 2vh;
-    }
-  }
-  
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  .typewriter h1 {
-      margin-top: 10%;
-      font-size: 3vh;
-    }
-    .typewriter p {
-      margin-top: 33%;
-     font-size: 2.3vh;
-    }
-    .card {
-      margin-top: 33%;
-    }
-  }
-  /**********
-  iPad 3
-  **********/
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-  .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  /* Desktops and laptops ----------- */
-  @media only screen  and (min-width : 1224px) {
-    .typewriter h1 {
-      font-size: 8vh;
-    }
-    .typewriter p {
-    
-     font-size: 6vh;
-    }
-    
-    .container {
-  
-    height: 150px;
-    width: 150px;
-    
-  }
-  .card {
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: large;
-  }
-  }
-  
-  /* Large screens ----------- */
-  @media only screen  and (min-width : 1824px) {
-  /* Styles */
-  }
-  
-  /* iPhone 4 ----------- */
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  /* iPhone 5 ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    .typewriter h1 {
-      font-size: 6vh;
-    }
-    .typewriter p {
-    
-     font-size: 5vh;
-    }
-    .cards {
-      width: 75px;
-      height: 75px;
-    }
-  }
-  
-  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  /* iPhone 6, 7, 8 ----------- */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
-  }
-  
-  /* iPhone 6+, 7+, 8+ ----------- */
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    .typewriter h1 {
-      font-size: 2vh;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  /* iPhone X ----------- */
-  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    .typewriter h1 {
-      font-size:6vh;
-    }
-    .typewriter p {
-     font-size: 5vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: -1%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 3%;
-    font-size: small;
-  }
-  }
-  
-  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    .typewriter h1 {
-      font-size:1.8vh;
-    }
-    .typewriter p {
-    margin-top: 70%;
-     font-size: 1.6vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
-  }
-  .card {
-    margin-top: 50%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 10%;
-    font-size: small;
-  }
-  }
-  
-  /* iPhone XS Max, XR ----------- */
-  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    .biggerp {
-      display: none;
-    }
-    .smallerp {
-      display: inline;
-    }
 
-    .typewriter h1 {
-      font-size: 7vh;
-    }
-    .typewriter p {
-    
-     font-size: 5vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
+  .typewriter p {
+    margin-top: 20%;
+    font-size: 4vh;
   }
   .card {
-   margin-top: 5%;
-    padding-left: 1%;
-    padding-right: 1%;
-    font-size: small;
+  margin-top: 10%;
   }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .biggerp {
+    display: none;
   }
+  .smallerp {
+    display: inline;
+  }
+
+  .typewriter h1 {
   
-  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    .typewriter h1 {
-      font-size: 16px;
-    }
-    .typewriter p {
-    margin-top: 40%;
-     font-size: 2vh;
-    }
-    
-    .container {
-  
-    height: 75px;
-    width: 75px;
-    
+    font-size: 5vh;
+  }
+
+  .typewriter p {
+    margin-top: 10%;
+    font-size: 5vh;
   }
   .card {
-    margin-top: 30%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-bottom: 6%;
-    font-size: small;
+  margin-top: 1%;
   }
-  }
+}
   
-  /* Samsung Galaxy S3 ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .biggerp {
+    display: none;
   }
+  .smallerp {
+    display: inline;
+  }
+
+  .typewriter h1 {
   
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-  /* Styles */
+    font-size: 6.8vh;
   }
+
+  .typewriter p {
+    margin-top: 5%;
+    font-size: 6vh;
+  }
+  .card {
   
-  /* Samsung Galaxy S4 ----------- */
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
   }
-  
-  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
-  
-  /* Samsung Galaxy S5 ----------- */
-  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
-  
-  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-  /* Styles */
-  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
