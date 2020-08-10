@@ -3,7 +3,6 @@ body, html {
   margin: 0;
   font-family: 'Roboto', sans-serif;
   overflow: hidden;
-    
 }
 .biggerp {
   display: inline;
@@ -18,6 +17,7 @@ body, html {
 
 .site-container {
   height: 100%;
+  place-items: center;
 }
 
 .bg-image {
@@ -53,7 +53,7 @@ body, html {
 }
 
 .typewriter h1 {
-  font-size: 60px;
+  font-size: 8vh;
   padding-top: 6%;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -67,7 +67,7 @@ body, html {
 }
 .typewriter p {
   padding-top: 7%;
-  font-size: 30px;
+  font-size: 5vh;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   
@@ -91,609 +91,263 @@ body, html {
   50% { border-color: orange; }
 }
 
-.card {
-  padding-top: 40px;
-  margin-top: 75px;
-  margin-left: 28%;
-  margin-bottom: 10%;
-  text-align: center;
-  width: 150px;
-  height: 150px;
-  
-}
-
-.card1 {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
-
-.card2 {
-  padding-top: 40px;
-margin-left: 220px;
-margin-top: -150px;
-/* Add shadows to create the "card" effect */
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
-}
-
-.card3 {
-  padding-top: 40px;
-margin-left: 220px;
-margin-top: -150px;
-/* Add shadows to create the "card" effect */
-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-transition: 0.3s;
+.cards {
+  display: flex;
+  justify-content: space-between;
 }
 
 
-
-.cards-container {
- padding-top: 1%;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card1:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.card2:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-.card3:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-@media screen and (max-width: 1200px) {
-
-  body, html {
-      height:110vh;
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      overflow: hidden;
-        
-    }
-    body {
-      height: 100%;
-      
-  }
-  .biggerp {
-    display: inline;
-  }
-  .smallerp {
-    display: none;
-  }
-  
-  .typewriter h1 {
-    
-    font-size: 45px;
-    
-  }
-  
-  .typewriter p {
-    margin-bottom: 100px;
-    font-size: 30px;
-    font-weight: bold;
-  
-  }
-   .card-container {
-    
-    
-    display: flex;
-    justify-content: space-between;
-    margin-left: -300px;
-   }
-
-   .card1 {
-     margin-top: -50px;
-     margin-left: 150px;
-     
-    
-   }
-   .card2 {
-     margin-left: 300px;
-   }
-   .card3 {
-     margin-left: 300px;
-   }
- 
-  
-  .bg-image {
-    /* Full height */
-    height: 100%;
-  
-    
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.flex-container {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   }
 
-  .img3 {
-    max-height: 100%;
-    min-height: 100%;
-  }
-  
-
-}
-@media screen and (max-width: 1080px) {
-
-  body, html {
-      height:110vh;
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      overflow: hidden;
-        
-    }
-    body {
-      height: 100%;
-      
-  }
-  .biggerp {
-    display: inline;
-  }
-  .smallerp {
-    display: none;
-  }
-  
-  .typewriter h1 {
-    
-    font-size: 40px;
-    
-  }
-  
-  .typewriter p {
-    margin-bottom: 150px;
-    font-size: 30px;
-    font-weight: bold;
-  
-  }
-   .card-container {
-    
-    
-    display: flex;
-    justify-content: space-between;
-    margin-left: -300px;
-   }
-
-   .card1 {
-     margin-top: -80px;
-     margin-left: 120px;
-     
-    
-   }
-   .card2 {
-     margin-left: 300px;
-   }
-   .card3 {
-     margin-left: 300px;
-   }
- 
-  
-  .bg-image {
-    /* Full height */
-    height: 100%;
-  
-    
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.flex-item:nth-child(1) {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
   }
 
-  .img3 {
-    max-height: 100%;
-    min-height: 100%;
-  }
-  
-
-}
-
-@media screen and (max-width: 900px) {
-  html {
-    height: 100%;
-  }
-  
-  .typewriter h1 {
-    font-size: 30px;
-  }
-  .typewriter p {
-    
-    font-size: 20px;
-    font-weight: bold;
-  
-  }
-  .biggerp {
-    display: inline;
-  }
-  .smallerp {
-    display: none;
-  }
-  .cards-container {
-    display: flex;
+.flex-item:nth-child(2) {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
   }
 
-  .card1 {
-    margin-top: -50px;
-    margin-left: 75px;
-    
-   
-  }
-  .card2 {
-    margin-left: 260px;
-  }
-  .card3 {
-    margin-left: 260px;
-  }
-  
-  
-}
-@media screen and (max-width: 760px) {
-  html {
-    height: 100%;
-  }
-  
-  .typewriter h1 {
-    font-size: 30px;
-  }
-  .typewriter p {
-    
-    font-size: 20px;
-    font-weight: bold;
-  
-  }
-  .cards-container {
-    display: flex;
-  }
-  .biggerp {
-    display: inline;
-  }
-  .smallerp {
-    display: none;
-  }
-
-  .card1 {
-    margin-top: -50px;
-    margin-left: 40px;
-    
-   
-  }
-  .card2 {
-    margin-left: 260px;
-  }
-  .card3 {
-    margin-left: 260px;
-  }
-  
-  
-}
-@media screen and (max-width: 540px) {
-  html {
-    height: 100%;
-  }
-  
-  .typewriter h1 {
-    font-size: 30px;
-  }
-  .typewriter p {
-    
-    font-size: 20px;
-    font-weight: bold;
-  
-  }
-  .cards-container {
-    display: flex;
-  }
-  .biggerp {
-    display: inline;
-  }
-  .smallerp {
-    display: none;
-  }
-
-  .card1 {
-    margin-top: -50px;
-    margin-left: 40px;
-    
-   
-  }
-  .card2 {
-    margin-left: 20px;
-  }
-  .card3 {
-    margin-left: 210px;
-  }
-  
-  
-}
-
-
-@media screen and (max-width: 600px) {
-  html {
-    height: 100%;
-  }
-  .typewriter h1 {
-    padding-top: 100px;
-    font-size: 22px;
-  }
-  .typewriter p {
-   
-    margin-top: 50px;
-    font-size: 18px;
-    font-weight: bold;
-  
-  }
-  .biggerp {
-    display: none;
-  }
-  .smallerp {
-    display: inline;
-  }
-  .cards-container {
-    display: flex;
-    
-  }
-  
-  
-  .bg-image {
-    /* Full height */
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .img3 {
-    max-height: 100%;
-    min-height: 100%;
-  }
-
-  .card1 {
-    margin-bottom: 10px;
-    margin-left: 9px;
-    
-   
-  }
-  .card2 {
-    margin-left: 185px;
-  }
-  .card3 {
-    margin-left: 185px;
-  }
-  
-  
-}
-@media screen and (max-width: 480px) {
-  html {
-    height: 100%;
-  }
-  .typewriter h1 {
-    padding-top: 50px;
-    font-size: 16px;
-  }
-  .typewriter p {
-    margin-top: 25%;
-    font-size: 16px;
-    
-  
-  }
-  .biggerp {
-    display: none;
-  }
-  .smallerp {
-    display: inline;
-  }
-  .cards-container {
-    display: flex;
-    
-  }
-  
-  
-  .bg-image {
-    /* Full height */
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .img3 {
-    max-height: 100%;
-    min-height: 100%;
+.flex-item:nth-child(3) {
+  -webkit-order: 0;
+  -ms-flex-order: 0;
+  order: 0;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
   }
 
   .card {
-    padding-top: 15px;
-    margin-top: -3em;
-    margin-left: 28%;
+    margin: 2%;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+
+  .card-1 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card-1:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card-2 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card-2:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  .card-3 {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card-3:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    
     text-align: center;
-    width: 100px;
-    height: 100px;
-    
+    width: 150px;
+    height: 150px;
+    padding-top: 30%;
   }
 
-  .card1 {
-    font-size: 14px;
-    
-    margin-left: 12px;
-    
-   
-  }
-  .card2 {
-    font-size: 14px;
-    margin-top: -110px;
-    margin-left: 125px;
-  }
-  .card3 {
-    font-size: 14px;
-    margin-top: -110px;
-    margin-left: 125px;
-    
-  }
   
-  
-}
-@media screen and (max-width: 320px) {
-  html {
-    height: 100%;
-  }
-  .typewriter h1 {
-    padding-top: 100px;
-    font-size: 18px;
-  }
-  .typewriter p {
-    margin-top: 50px;
-    font-size: 16px;
-    
-  
-  }
-  .biggerp {
-    display: none;
-  }
-  .smallerp {
-    display: inline;
-  }
-  .cards-container {
-    display: flex;
-    
-  }
-  
-  
-  .bg-image {
-    /* Full height */
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
-    
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
 
-  .img3 {
-    max-height: 100%;
-    min-height: 100%;
-  }
 
-  .card {
-    padding-top: 15px;
-    margin-top: 75px;
-    margin-left: 28%;
-    margin-bottom: 10%;
-    text-align: center;
-    width: 100px;
-    height: 100px;
-    
-  }
 
-  .card1 {
-    font-size: 14px;
-    margin-top: -60px;
-    margin-left: 10px;
-    
-   
-  }
-  .card2 {
-    font-size: 14px;
-    margin-top: -110px;
-    margin-left: 150px;
-  }
-  .card3 {
-    font-size: 14px;
-    margin-top: -110px;
-    margin-left: 80px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* MEDIA QUERIES */
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  
   }
   
+  /* Smartphones (landscape) ----------- */
+  @media only screen and (min-width : 321px) {
+  /* Styles */
+  }
   
-}
-
-@media only screen 
-    and (device-width : 414px) 
-    and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 2) { 
-      html {
-        height: 100%;
-      }
-      .typewriter h1 {
-        padding-top: 100px;
-        font-size: 18px;
-      }
-      .typewriter p {
-        margin-top: 50px;
-        font-size: 16px;
-        
-      
-      }
-      .biggerp {
-        display: none;
-      }
-      .smallerp {
-        display: inline;
-      }
-      .cards-container {
-        display: flex;
-        
-      }
-      
-      
-      .bg-image {
-        /* Full height */
-        height: 100%;
-        min-height: 100%;
-        max-height: 100%;
-        
-      
-        /* Center and scale the image nicely */
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-    
-      .img3 {
-        max-height: 100%;
-        min-height: 100%;
-      }
-    
-      .card {
-        padding-top: 15px;
-        margin-top: 75px;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 10%;
-        text-align: center;
-        width: 100px;
-        height: 100px;
-        
-      }
-    
-      .card1 {
-        font-size: 14px;
-        margin-top: -60px;
-        margin-left: 10px;
-        
-       
-      }
-      .card2 {
-        font-size: 14px;
-        margin-top: -110px;
-        margin-left: 150px;
-      }
-      .card3 {
-        font-size: 14px;
-        margin-top: -110px;
-        margin-left: 80px;
-      }
-    }
+  /* Smartphones (portrait) ----------- */
+  @media only screen and (max-width : 320px) {
+  /* Styles */
+  }
+  
+  /* iPads (portrait and landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  /* Styles */
+  }
+  
+  /* iPads (landscape) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  /* Styles */
+  }
+  
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  /* Styles */
+  }
+  /**********
+  iPad 3
+  **********/
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  /* Desktops and laptops ----------- */
+  @media only screen  and (min-width : 1224px) {
+  /* Styles */
+  }
+  
+  /* Large screens ----------- */
+  @media only screen  and (min-width : 1824px) {
+  /* Styles */
+  }
+  
+  /* iPhone 4 ----------- */
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+  /* Styles */
+  }
+  
+  /* iPhone 5 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* iPhone 6, 7, 8 ----------- */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* iPhone 6+, 7+, 8+ ----------- */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* iPhone X ----------- */
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  /* iPhone XS Max, XR ----------- */
+  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 414px) and (max-device-height: 896px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  /* Samsung Galaxy S3 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+  /* Styles */
+  }
+  
+  /* Samsung Galaxy S4 ----------- */
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  /* Samsung Galaxy S5 ----------- */
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
+  
+  @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
+  /* Styles */
+  }
