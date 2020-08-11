@@ -54,7 +54,6 @@ body, html {
 
 .typewriter h1 {
   font-size: 8vh;
-  padding-top: 1%;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   
@@ -155,6 +154,7 @@ body, html {
   }
 
   .card {
+    color: black;
     margin: 2%;
     font-weight: bold;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -162,6 +162,12 @@ body, html {
     border-radius: 5px; /* 5px rounded corners */
   }
 
+  a {
+    text-decoration: none;
+    margin: 4%;
+    margin-top: 2%;
+    cursor: pointer;
+  }
   .card-1 {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
