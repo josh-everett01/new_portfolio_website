@@ -208,6 +208,19 @@ body, html {
     padding-top: 25%;
   }
 
+  .hidden-contact h1 {
+    margin-top: 20%;
+    margin-left: 40%;
+    
+  }
+
+  .hidden-contact h3 {
+    
+    margin-left: 40%;
+  }
+
+  
+
   /* Extra Small devices */ /* THIS IS WHAT CHANGED SETTINGS ON MY PHONE*/
   @media only screen and (max-width: 808px) {
     html {
@@ -243,6 +256,8 @@ body, html {
         
       }
   }
+
+  
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
@@ -286,7 +301,7 @@ body, html {
 
   .typewriter h1 {
   margin-top: 10%;
-    font-size: 5vh;
+    font-size: 3.5vh;
   }
 
   .typewriter p {
