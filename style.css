@@ -208,6 +208,10 @@ body, html {
     padding-top: 25%;
   }
 
+  .hidden-contact {
+    display: none;
+  }
+
   .hidden-contact h1 {
     margin-top: 20%;
     margin-left: 40%;
