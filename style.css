@@ -213,13 +213,20 @@ body, html {
   }
 
   .hidden-contact h1 {
-    margin-top: 20%;
-    margin-left: 40%;
+  font-size: 6vh;
+    margin-top: 5%;
+    margin-left: 25%;
     
   }
 
+  .hidden-contact h2 {
+    font-size: 4vh;
+    margin-top: 15%;
+    margin-left: 40%;
+  }
+
   .hidden-contact h3 {
-    
+    font-size: 3vh;
     margin-left: 40%;
   }
 
