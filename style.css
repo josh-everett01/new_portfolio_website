@@ -20,6 +20,14 @@ body, html {
   place-items: center;
 }
 
+.main {
+  height: 100vh;
+}
+
+#projects {
+  height: 100vh;
+}
+
 .bg-image {
   /* Full height */
   height: 100%;
