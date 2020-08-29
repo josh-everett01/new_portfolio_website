@@ -6,9 +6,15 @@ html {
   background-size: cover;
 }
 
+#jev {
+  border-radius: 50%;
+  height: 5%;
+  width: 5%;
+}
+
 body {
   text-align: center;
-
+  place-items: center;
   font-family: "Roboto Mono", monospace;
 }
 
