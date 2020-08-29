@@ -11,6 +11,11 @@ body {
 
   font-family: "Roboto Mono", monospace;
 }
+#jev {
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+}
 
 .card {
   margin: 0;
