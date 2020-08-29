@@ -173,6 +173,11 @@ form {
     font-size: 1.8vw;
   }
 }
+#jev {
+  border-radius: 50%;
+  height: 10%;
+  width: 10%;
+}
 
 @media all and (min-width: 480px) and (max-width: 768px) {
   .typewriter h1 {
