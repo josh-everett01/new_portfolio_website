@@ -8,8 +8,9 @@ html {
 
 #jev {
   border-radius: 50%;
-  height: 5%;
-  width: 5%;
+  height: 7%;
+  width: 7%;
+  margin-top: -1.5%;
 }
 
 body {
@@ -125,7 +126,7 @@ textarea {
 }
 
 .typewriter h1 {
-  font-size: 4vh;
+  font-size: 4.2vh;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
 
@@ -140,7 +141,9 @@ form {
   grid-row-end: 3;
 }
 .typewriter p {
-  font-size: 2vh;
+  margin-top: 1%;
+  font-size: 2.5vw;
+  font-weight: bold;
   text-align: center;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
 
@@ -189,6 +192,7 @@ a {
 #project-tiles-container {
   display: flex;
   justify-content: space-evenly;
+  margin-top: -2%;
 }
 
 .thumb {
