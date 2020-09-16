@@ -92,6 +92,11 @@ img {
   grid-column: 5;
 }
 
+#container-5 {
+  grid-row: 1;
+  grid-column: 6;
+}
+
 form {
   font-size: 1.5vw;
   margin: auto;
