@@ -52,7 +52,7 @@ img {
   margin: auto;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin: auto;
 }
 
@@ -68,12 +68,17 @@ img {
 
 #container-3 {
   grid-row: 2;
-  grid-column: 4;
+  grid-column: 5;
 }
 
 #container-4 {
   grid-row: 2;
-  grid-column: 5;
+  grid-column: 6;
+}
+
+#container-5 {
+  grid-row: 2;
+  grid-column: 4;
 }
 
 form {
